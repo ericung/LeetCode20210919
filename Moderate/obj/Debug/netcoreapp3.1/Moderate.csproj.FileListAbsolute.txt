@@ -1,0 +1,13 @@
+C:\Users\Eric\source\repos\LeetCode20210919\Moderate\bin\Debug\netcoreapp3.1\Moderate.exe
+C:\Users\Eric\source\repos\LeetCode20210919\Moderate\bin\Debug\netcoreapp3.1\Moderate.deps.json
+C:\Users\Eric\source\repos\LeetCode20210919\Moderate\bin\Debug\netcoreapp3.1\Moderate.runtimeconfig.json
+C:\Users\Eric\source\repos\LeetCode20210919\Moderate\bin\Debug\netcoreapp3.1\Moderate.runtimeconfig.dev.json
+C:\Users\Eric\source\repos\LeetCode20210919\Moderate\bin\Debug\netcoreapp3.1\Moderate.dll
+C:\Users\Eric\source\repos\LeetCode20210919\Moderate\bin\Debug\netcoreapp3.1\Moderate.pdb
+C:\Users\Eric\source\repos\LeetCode20210919\Moderate\obj\Debug\netcoreapp3.1\Moderate.csprojAssemblyReference.cache
+C:\Users\Eric\source\repos\LeetCode20210919\Moderate\obj\Debug\netcoreapp3.1\Moderate.AssemblyInfoInputs.cache
+C:\Users\Eric\source\repos\LeetCode20210919\Moderate\obj\Debug\netcoreapp3.1\Moderate.AssemblyInfo.cs
+C:\Users\Eric\source\repos\LeetCode20210919\Moderate\obj\Debug\netcoreapp3.1\Moderate.csproj.CoreCompileInputs.cache
+C:\Users\Eric\source\repos\LeetCode20210919\Moderate\obj\Debug\netcoreapp3.1\Moderate.dll
+C:\Users\Eric\source\repos\LeetCode20210919\Moderate\obj\Debug\netcoreapp3.1\Moderate.pdb
+C:\Users\Eric\source\repos\LeetCode20210919\Moderate\obj\Debug\netcoreapp3.1\Moderate.genruntimeconfig.cache
