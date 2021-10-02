@@ -2,12 +2,12 @@ using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moderate.Problem01;
 
-namespace ModerateTests
+namespace ModerateTests.Problem01
 {
     [TestClass]
     public class NumberSwapperTests
     {
-        NumberSwapper numberSwapper = new NumberSwapper();
+        private NumberSwapper _numberSwapper = new NumberSwapper();
 
         [TestMethod]
         [DynamicData(nameof(NumberSwapperTestsData.SwapSuccessfullyData), typeof(NumberSwapperTestsData), DynamicDataSourceType.Method)]
@@ -16,7 +16,7 @@ namespace ModerateTests
             int oldA = a;
             int oldB = b;
 
-            numberSwapper.Swap(ref a, ref b);
+            _numberSwapper.Swap(ref a, ref b);
 
             a.Should().Be(oldB);
             b.Should().Be(oldA);

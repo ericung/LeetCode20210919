@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Moderate.Problem01
+namespace Moderate.Problem02
 {
     public class WordFrequencies
     {

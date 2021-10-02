@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ModerateTests
+namespace ModerateTests.Problem01
 {
     public class NumberSwapperTestsData
     {
