@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Moderate.Problem01
+﻿namespace Moderate.Problem01
 {
     public class NumberSwapper
     {
