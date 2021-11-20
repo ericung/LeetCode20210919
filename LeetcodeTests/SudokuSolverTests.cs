@@ -1,3 +1,4 @@
+using FluentAssertions;
 using Leetcode;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -25,6 +26,8 @@ namespace LeetcodeTests
                 };
 
             sudokuSolver.SolveSudoku(board);
+
+            board.Should().NotBeEmpty();
         }
     }
 }

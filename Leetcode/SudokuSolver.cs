@@ -18,6 +18,11 @@ namespace Leetcode
         private int Solve(char[][] board, int row,
             HashSet<char>[] rowHash, HashSet<char>[] columnHash, HashSet<char>[][] boxHash)
         {
+            if (PlacedAll(rowHash, columnHash, boxHash))
+            {
+                return 1;
+            }
+
             for (int column = 0; column < board[0].Length; column++)
             {
                 for (int i = 0; i < numbers.Length; i++)
@@ -25,20 +30,9 @@ namespace Leetcode
                     if ((board[row][column] == '.')
                         && (IsValid(board[row][column], row, column, rowHash, columnHash, boxHash)))
                     {
-                        Console.WriteLine(numbers[i] + ", " + row + ", " + column);
                         PlaceDigit(board, numbers[i], row, column, rowHash, columnHash, boxHash);
-                        if (PlacedAll(rowHash, columnHash, boxHash))
-                        {
-                            return 1;
-                        }
-                        else if (row + 1 == board.Length)
-                        {
-                            return -1;
-                        }
-                        else
-                        {
+                        if (row + 1 < 9)
                             Solve(board, row + 1, rowHash, columnHash, boxHash);
-                        }
                         RemoveDigit(board, row, column, rowHash, columnHash, boxHash);
                     }
                 }
