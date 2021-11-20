@@ -12,33 +12,46 @@ namespace Leetcode
             (HashSet<char>[] rowHash, HashSet<char>[] columnHash, HashSet<char>[][] boxHash)
                 = InitializeHash(board.Length);
             PopulateHash(board, rowHash, columnHash, boxHash);
-            Solve(board, 0, rowHash, columnHash, boxHash);
+            Solve(board, rowHash, columnHash, boxHash);
         }
 
-        private int Solve(char[][] board, int row,
+        private int Solve(char[][] board,
             HashSet<char>[] rowHash, HashSet<char>[] columnHash, HashSet<char>[][] boxHash)
         {
             if (PlacedAll(rowHash, columnHash, boxHash))
             {
+                Console.WriteLine("placed all");
                 return 1;
             }
 
-            for (int column = 0; column < board[0].Length; column++)
+            for (int row = 0; row < board.Length; row++)
             {
-                for (int i = 0; i < numbers.Length; i++)
+                for (int column = 0; column < board[row].Length; column++)
                 {
-                    if ((board[row][column] == '.')
-                        && (IsValid(board[row][column], row, column, rowHash, columnHash, boxHash)))
+                    if (board[row][column] == '.')
                     {
-                        PlaceDigit(board, numbers[i], row, column, rowHash, columnHash, boxHash);
-                        if (row + 1 < 9)
-                            Solve(board, row + 1, rowHash, columnHash, boxHash);
-                        RemoveDigit(board, row, column, rowHash, columnHash, boxHash);
+                        for (int i = 0; i < numbers.Length; i++)
+                        {
+                            if (IsValid(numbers[i], row, column, rowHash, columnHash, boxHash))
+                            {
+                                PlaceDigit(board, numbers[i], row, column, rowHash, columnHash, boxHash);
+                                if (Solve(board, rowHash, columnHash, boxHash) == 1)
+                                {
+                                    return 1;
+                                }
+                                else
+                                {
+                                    RemoveDigit(board, row, column, rowHash, columnHash, boxHash);
+                                }
+                            }
+                        }
+
+                        return -1;
                     }
                 }
             }
 
-            return -1;
+            return 1;
         }
 
         private bool PlacedAll(HashSet<char>[] rowHash, HashSet<char>[] columnHash, HashSet<char>[][] boxHash)
