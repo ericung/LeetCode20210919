@@ -7,9 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moderate", "Moderate\Modera
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModerateTests", "ModerateTests\ModerateTests.csproj", "{E12D8AFA-B1BB-4472-BBED-E12A952271A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitManipulation", "BitManipulation\BitManipulation.csproj", "{50122F8D-246A-4EF5-8EA4-7538CE7AA35D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BitManipulation", "BitManipulation\BitManipulation.csproj", "{50122F8D-246A-4EF5-8EA4-7538CE7AA35D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitManipulationTests", "BitManipulationTests\BitManipulationTests.csproj", "{2ECD439B-2520-4170-B18C-CF1177462474}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BitManipulationTests", "BitManipulationTests\BitManipulationTests.csproj", "{2ECD439B-2520-4170-B18C-CF1177462474}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leetcode", "Leetcode\Leetcode.csproj", "{E402C3AF-1B02-43E2-8A2F-F4DA18170294}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetcodeTests", "LeetcodeTests\LeetcodeTests.csproj", "{941ED132-D753-4994-8A11-54E801A8A617}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{2ECD439B-2520-4170-B18C-CF1177462474}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2ECD439B-2520-4170-B18C-CF1177462474}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2ECD439B-2520-4170-B18C-CF1177462474}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E402C3AF-1B02-43E2-8A2F-F4DA18170294}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E402C3AF-1B02-43E2-8A2F-F4DA18170294}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E402C3AF-1B02-43E2-8A2F-F4DA18170294}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E402C3AF-1B02-43E2-8A2F-F4DA18170294}.Release|Any CPU.Build.0 = Release|Any CPU
+		{941ED132-D753-4994-8A11-54E801A8A617}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{941ED132-D753-4994-8A11-54E801A8A617}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{941ED132-D753-4994-8A11-54E801A8A617}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{941ED132-D753-4994-8A11-54E801A8A617}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
