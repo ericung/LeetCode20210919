@@ -18,12 +18,6 @@ namespace Leetcode
         private int Solve(char[][] board,
             HashSet<char>[] rowHash, HashSet<char>[] columnHash, HashSet<char>[][] boxHash)
         {
-            if (PlacedAll(rowHash, columnHash, boxHash))
-            {
-                Console.WriteLine("placed all");
-                return 1;
-            }
-
             for (int row = 0; row < board.Length; row++)
             {
                 for (int column = 0; column < board[row].Length; column++)
@@ -54,34 +48,6 @@ namespace Leetcode
             return 1;
         }
 
-        private bool PlacedAll(HashSet<char>[] rowHash, HashSet<char>[] columnHash, HashSet<char>[][] boxHash)
-        {
-            for (int i = 0; i < 9; i++)
-            {
-                if (rowHash[i].Count < 9)
-                {
-                    return false;
-                }
-
-                if (columnHash[i].Count < 9)
-                {
-                    return false;
-                }
-            }
-
-            for (int i = 0; i < 3; i++)
-            {
-                for (int j = 0; j < 3; j++)
-                {
-                    if (boxHash[i][j].Count < 9)
-                    {
-                        return false;
-                    }
-                }
-            }
-
-            return true;
-        }
         private void PlaceDigit(char[][] board, char digit, int row, int column,
             HashSet<char>[] rowHash, HashSet<char>[] columnHash, HashSet<char>[][] boxHash)
         {
